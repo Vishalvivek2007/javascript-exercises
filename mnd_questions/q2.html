@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let string = prompt("Enter the string ");
+    function camelize(lol){
+        return lol.split('-').
+        map((element,index)=> {return index == 0 ? element : element[0].toUpperCase() + element.slice(1,element.length)})
+        .join('');
+    }
+    string = camelize(string);
+    console.log(string);
+</script>
+</html>
